@@ -15,7 +15,7 @@ const conf = {
     /** Duration default in 1 minute */
     defaultDuration: 1 * UNIT_TIME.MINUTE,
     /** By default refresh is 15 seconds */
-    defaultPollInterval: 15 * MILLISECONDS,
+    defaultPollInterval: 600 * MILLISECONDS,
     /** Options in refresh */
     pollInterval: {
       0: 'Pause',
@@ -24,6 +24,7 @@ const conf = {
       30000: 'Every 30s',
       60000: 'Every 1m',
       300000: 'Every 5m',
+      600000: 'Every 10m',
       900000: 'Every 15m'
     },
     /** Graphs layouts types */
